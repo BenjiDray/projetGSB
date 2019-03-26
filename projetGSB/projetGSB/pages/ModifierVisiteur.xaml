@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.ModifierVisiteur">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblErreur" Text="Identifiants incorrects" IsVisible="False" BackgroundColor="Red" TextColor="White" FontSize="Large"></Label>
+
+            <Label>nom</Label>
+            <Entry x:Name="txtNom" Text="{Binding vis_nom}"></Entry>
+            <Label>prenom</Label>
+            <Entry x:Name="txtPrenom" Text="{Binding vis_prenom}"></Entry>
+
+            <Label>adresse</Label>
+            <Entry x:Name="txtAdresse" Text="{Binding vis_adresse}"></Entry>
+
+
+            <Label>ville</Label>
+            <Entry x:Name="txtVille" Text="{Binding vis_ville}"></Entry>
+            
+            <Label>code postale</Label>
+            <Entry x:Name="txtCP" Text="{Binding vis_cp}"></Entry>
+
+            <Button Text="updateVisiteur" Clicked="BtnValider_Clicked"   x:Name="btnValider"></Button>
+
+            <Button Text="retour" Clicked="BtnRetour_ClickedAsync"   x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

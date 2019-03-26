@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.ListerVisiteur">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Listes des visiteurs"></Label>
+            <Button Text="+" Clicked="BtnInsererVisiteur_ClickedAsync" x:Name="btnInserer"></Button>
+            <ListView x:Name="lstVisiteurs" ItemSelected="LstVisiteurs_ItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout  Orientation="Horizontal">
+                                    <Label WidthRequest="200"  Text="{Binding vis_nom}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding vis_prenom }"></Label>
+                                    
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="retour" Clicked="BtnRetour_ClickedAsync"  x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

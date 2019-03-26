@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.InsererVisiteur">
+
+
+
+    <ContentPage.Content>
+
+        <StackLayout>
+        <Label x:Name="lblErreur" Text="Identifiants incorrects" IsVisible="False" BackgroundColor="Red" TextColor="White" FontSize="Large"></Label>
+
+            <Label>nom</Label>
+            <Entry x:Name="txtNom"></Entry>
+            <Label>prenom</Label>
+            <Entry x:Name="txtPrenom"></Entry>
+
+            <Label>adresse</Label>
+            <Entry x:Name="txtAdresse"></Entry>
+
+            <Label>code postale</Label>
+            <Entry x:Name="txtCP"></Entry>
+
+            <Label>ville</Label>
+            <Entry x:Name="txtVille"></Entry>
+            <Picker ItemDisplayBinding="{Binding lab_nom}" SelectedItem="{Binding lab_code}" SelectedIndex="{Binding lab_code}" x:Name="lstLabo">
+                
+            </Picker>
+
+            <Button Text="valider" x:Name="btnValider" Clicked="BtnValider_Clicked" ></Button>
+            <Button Text="retour" Clicked="BtnRetour_ClickedAsync" x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
