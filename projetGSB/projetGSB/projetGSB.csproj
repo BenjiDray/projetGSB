@@ -15,8 +15,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="pages\AccueilRegion.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    <Compile Update="pages\ModifierRegion.xaml.cs">
+      <DependentUpon>ModifierRegion.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\InsererVisiteur.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -25,9 +31,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\ListerVisiteur.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="pages\ModifierRegions.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="pages\ModifierVisiteur.xaml">

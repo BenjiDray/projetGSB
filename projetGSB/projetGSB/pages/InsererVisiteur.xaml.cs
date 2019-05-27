@@ -37,9 +37,12 @@ namespace projetGSB.pages
         // voici le bouton pour insere le visiteur
         private async void BtnValider_Clicked(object sender, EventArgs e)
         {
-            await App.Gst.insererVisiteurAsync(txtNom.Text,txtPrenom.Text,txtAdresse.Text,txtCP.Text,txtVille.Text,(lstLabo.SelectedItem as Labo).lab_code);
-            MainPage page = new MainPage();
-            await Navigation.PushModalAsync(page);
+        
+        await App.Gst.insererVisiteurAsync(txtNom.Text, txtPrenom.Text, txtAdresse.Text, txtCP.Text, txtVille.Text, (lstLabo.SelectedItem as Labo).lab_code);
+        MainPage page = new MainPage();
+        await Navigation.PushModalAsync(page);
+            
+            
         }
 
      

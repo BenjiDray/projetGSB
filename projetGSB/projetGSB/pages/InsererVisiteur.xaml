@@ -7,28 +7,28 @@
 
     <ContentPage.Content>
 
-        <StackLayout>
-        <Label x:Name="lblErreur" Text="Identifiants incorrects" IsVisible="False" BackgroundColor="Red" TextColor="White" FontSize="Large"></Label>
+        <StackLayout BackgroundColor="black">
+        <Label x:Name="lblErreur" Text="veuillez remplir tous les champs" IsVisible="False" TextColor="red"></Label>
 
-            <Label>nom</Label>
-            <Entry x:Name="txtNom"></Entry>
-            <Label>prenom</Label>
-            <Entry x:Name="txtPrenom"></Entry>
+            <Label TextColor="White">nom</Label>
+            <Entry x:Name="txtNom" BackgroundColor="LightGray"></Entry>
+            <Label TextColor="White">prenom</Label>
+            <Entry x:Name="txtPrenom" BackgroundColor="LightGray"></Entry>
 
-            <Label>adresse</Label>
-            <Entry x:Name="txtAdresse"></Entry>
+            <Label TextColor="White">adresse</Label>
+            <Entry x:Name="txtAdresse" BackgroundColor="LightGray"></Entry>
 
-            <Label>code postale</Label>
-            <Entry x:Name="txtCP"></Entry>
+            <Label TextColor="White">code postale</Label>
+            <Entry x:Name="txtCP" BackgroundColor="LightGray"></Entry>
 
-            <Label>ville</Label>
-            <Entry x:Name="txtVille"></Entry>
-            <Picker ItemDisplayBinding="{Binding lab_nom}" SelectedItem="{Binding lab_code}" SelectedIndex="{Binding lab_code}" x:Name="lstLabo">
+            <Label TextColor="White" >ville</Label>
+            <Entry BackgroundColor="LightGray" x:Name="txtVille"></Entry>
+            <Picker BackgroundColor="LightGray" ItemDisplayBinding="{Binding lab_nom}" SelectedItem="{Binding lab_code}" SelectedIndex="{Binding lab_code}" x:Name="lstLabo">
                 
             </Picker>
 
-            <Button Text="valider" x:Name="btnValider" Clicked="BtnValider_Clicked" ></Button>
-            <Button Text="retour" Clicked="BtnRetour_ClickedAsync" x:Name="btnRetour"></Button>
+            <Button Text="valider" BackgroundColor="SpringGreen" x:Name="btnValider" Clicked="BtnValider_Clicked" ></Button>
+            <Button Text="retour" BackgroundColor="SpringGreen" Clicked="BtnRetour_ClickedAsync" x:Name="btnRetour"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

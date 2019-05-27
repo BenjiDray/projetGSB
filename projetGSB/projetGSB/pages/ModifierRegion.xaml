@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.ModifierRegion">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black" >
+            
+            <Label TextColor="White">nom de la region</Label>
+            <Entry Text="{Binding REG_NOM}" x:Name="txtRegion"></Entry>
+            <Label TextColor="White"> secteur </Label>
+            <Picker BackgroundColor="White"  ItemDisplayBinding="{Binding SEC_LIBELLE}" SelectedItem="{Binding sec_libelle}" SelectedIndex="{Binding SEC_CODE}"  x:Name="lstsec_code">
+                
+            </Picker>
+            <Button Text="valider" BackgroundColor="SpringGreen" x:Name="btnValider" Clicked="BtnValider_Clicked" ></Button>
+            <Button Text="retour" BackgroundColor="SpringGreen" x:Name="btnRetour" Clicked="BtnRetour_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

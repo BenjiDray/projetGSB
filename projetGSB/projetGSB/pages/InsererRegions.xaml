@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.InsererRegions">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black" >
+            <Label TextColor="White" Text="Insérer ses initiales"></Label>
+            <Entry x:Name="codeRegAInserer"></Entry>
+
+            <Label TextColor="White" Text="Inserer le secteur"></Label>
+            <Entry x:Name="sectRegAInserer"></Entry>
+
+            <Label TextColor="White" Text="Insérer une Région"></Label>
+            <Entry x:Name="regionAInserer"></Entry>
+
+            <Button Text="Insérer" BackgroundColor="SpringGreen" Clicked="ButtonSubmit_ClickedAsync" x:Name="btnSubmit"></Button>
+            <Button Text="retour" BackgroundColor="SpringGreen" Clicked="ButtonRetour_ClickedAsync" x:Name="btnRetour"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

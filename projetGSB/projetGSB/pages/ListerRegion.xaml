@@ -3,9 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projetGSB.pages.ListerRegion">
     <ContentPage.Content>
-        <StackLayout>
-            
-            <Button Text="retour" Clicked="BtnRetour_ClickedAsync"  x:Name="btnRetour"></Button>
+        <StackLayout BackgroundColor="Black">
+            <Button Text="+" Clicked="BtnInserer_ClickedAsync" BackgroundColor="SpringGreen" x:Name="btnInserer"></Button>
+
+            <Label Text="Voici la liste des régions" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <ListView x:Name="lvToutesLesRegions" ItemSelected="LvToutesLesRegions_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label TextColor="White" Text="{Binding REG_NOM}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Statistique" Clicked="BtnStat_ClickedAsync"  BackgroundColor="SpringGreen" x:Name="btnStat"></Button>
+            <Button Text="retour" Clicked="BtnRetour_ClickedAsync"  BackgroundColor="SpringGreen"  x:Name="btnRetour"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

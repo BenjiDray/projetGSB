@@ -42,5 +42,7 @@ namespace projetGSB.pages
             ModifierVisiteur page = new ModifierVisiteur(levisiteurSelectionne);
            await Navigation.PushModalAsync(page);
         }
+
+       
     }
 }

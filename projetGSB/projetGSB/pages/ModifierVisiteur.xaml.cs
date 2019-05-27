@@ -38,6 +38,7 @@ namespace projetGSB.pages
 
         private async  void BtnValider_Clicked(object sender, EventArgs e)
         {
+            
             await App.Gst.modifierVisiteur(txtNom.Text, txtPrenom.Text, txtAdresse.Text, txtVille.Text, txtCP.Text,Visiteur.vis_matricule);
             MainPage page = new MainPage();
             await Navigation.PushModalAsync(page);

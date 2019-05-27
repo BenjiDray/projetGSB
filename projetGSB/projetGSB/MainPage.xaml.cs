@@ -16,7 +16,7 @@ namespace projetGSB
 
         private async void BtnAccRegions_ClickedAsync(object sender, EventArgs e)
         {
-            pages.AccueilRegion page = new pages.AccueilRegion();
+            pages.ListerRegion page = new pages.ListerRegion();
             await Navigation.PushModalAsync(page);
         }
 
