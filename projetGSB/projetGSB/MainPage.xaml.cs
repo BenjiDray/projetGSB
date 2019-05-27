@@ -25,5 +25,11 @@ namespace projetGSB
             pages.ListerVisiteur page = new pages.ListerVisiteur();
             await Navigation.PushModalAsync(page);
         }
+
+        private async void BtnAccTravaille_Clicked(object sender, EventArgs e)
+        {
+            pages.ListerVisiteurTravail page = new pages.ListerVisiteurTravail();
+            await Navigation.PushModalAsync(page);
+        }
     }
 }

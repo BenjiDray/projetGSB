@@ -43,8 +43,12 @@ namespace projetGSB.classeMetier
 
         }
 
+        public async Task insererTravailVisiteur(string vis_matricule,string reg_code)
+        {
+            await ws.GetStringAsync(App.LocalHost + "visiteurs/insertTravailVisiteur.php?vis_matricule="+vis_matricule + "&reg_code="+reg_code);
 
-        
+        }
+
 
     }
 }

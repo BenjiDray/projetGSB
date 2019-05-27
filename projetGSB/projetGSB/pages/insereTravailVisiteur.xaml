@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetGSB.pages.insereTravailVisiteur">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label TextColor="WhiteSmoke" Text="selectionnez la region où le visiteur travaille"></Label>
+            <Picker BackgroundColor="White"  ItemDisplayBinding="{Binding REG_NOM}" SelectedItem="{Binding REG_CODE}"  x:Name="lstReg_code">
+            </Picker>
+            <Button Text="Valider" BackgroundColor="SpringGreen" Clicked="Btnvalider_Clicked" x:Name="btnvalider"></Button>
+
+            <Button Text="Retour" BackgroundColor="SpringGreen" Clicked="BtnRetour_Clicked" x:Name="btnRetour"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

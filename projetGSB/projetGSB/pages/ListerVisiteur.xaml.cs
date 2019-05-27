@@ -17,9 +17,9 @@ namespace projetGSB.pages
 		public ListerVisiteur ()
 		{
 			InitializeComponent ();
-            listeDesVisiteurs();
+            listeDesVisiteur();
 		}
-        public async void listeDesVisiteurs()
+        public async void listeDesVisiteur()
         {
            
             lstVisiteurs.ItemsSource = await App.Gst.lstVisiteur();

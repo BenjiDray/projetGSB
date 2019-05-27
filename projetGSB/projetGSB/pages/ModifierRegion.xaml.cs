@@ -27,7 +27,6 @@ namespace projetGSB.pages
             lstsec_code.ItemsSource = await App.GstWS.recupSec_Code();
         }
 
- 
         private void donneDeLaRegion(classeMetier.Region laRegion)
         {
             txtRegion.Text = laRegion.REG_NOM;

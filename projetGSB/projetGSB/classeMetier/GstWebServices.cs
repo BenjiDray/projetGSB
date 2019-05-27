@@ -46,12 +46,12 @@ namespace projetGSB.classeMetier
             return nbRegBySect;
         }
 
-        public async Task<List<StatRegion>> GetRegMinAndMaxVisiteurAsync()
-        {
-            reponse = await ws.GetStringAsync(App.LocalHost + "regions/GetRegMinAndMaxVisiteur.php");
-            List<StatRegion> resultat = JsonConvert.DeserializeObject<List<StatRegion>>(reponse);
-            return resultat;
-        }
+       // public async Task<List<StatRegion>> GetRegMinAndMaxVisiteurAsync()
+        //{
+          //  reponse = await ws.GetStringAsync(App.LocalHost + "regions/GetRegMinAndMaxVisiteur.php");
+            //List<StatRegion> resultat = JsonConvert.DeserializeObject<List<StatRegion>>(reponse);
+            //return resultat;
+        //}
 
         public async Task modifierRegion(string idRegion,string sec_code,string reg_nom )
         {

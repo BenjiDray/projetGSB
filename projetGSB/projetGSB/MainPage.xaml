@@ -8,7 +8,8 @@
 
         <Button x:Name="btnAccRegions"  Clicked="BtnAccRegions_ClickedAsync" BackgroundColor="SpringGreen" Text="Gérer les regions"></Button>
         <Button  x:Name="btnAccVisiteurs" Clicked="BtnAccVisiteurs_ClickedAsync" BackgroundColor="SpringGreen" Text="Gérer les visiteurs"></Button>
-      
+        <Button  x:Name="btnAccTravaille" Clicked="BtnAccTravaille_Clicked" BackgroundColor="SpringGreen" Text="region où travaille les visiteurs"></Button>
+
     </StackLayout>
 
 </ContentPage>

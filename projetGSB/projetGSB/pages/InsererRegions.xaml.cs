@@ -25,7 +25,7 @@ namespace projetGSB.pages
         private async void ButtonSubmit_ClickedAsync(object sender, EventArgs e)
         {
             await App.GstWS.InsertRegions(codeRegAInserer.Text, sectRegAInserer.Text, regionAInserer.Text);
-            ListerVisiteur page = new ListerVisiteur();
+            ListerVisiteurTravail page = new ListerVisiteurTravail();
             await Navigation.PushModalAsync(page);
         }
     }

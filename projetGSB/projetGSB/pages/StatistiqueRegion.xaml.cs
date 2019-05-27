@@ -16,7 +16,7 @@ namespace projetGSB.pages
 		{
 			InitializeComponent ();
             nbRegionBySecteurs();
-            lstStatRegion();
+            //lstStatRegion();
             
         }
         private async void BtnRetour_ClickedAsync(object sender, EventArgs e)
@@ -29,10 +29,10 @@ namespace projetGSB.pages
             lvNbRegionBySecteur.ItemsSource = await App.GstWS.GetNbRegionBySecteurAsync();
         }
 
-        public async void lstStatRegion()
-        {
-            lvNbRegionBySecteur.ItemsSource = await App.GstWS.GetRegMinAndMaxVisiteurAsync();
-        }
+        //public async void lstStatRegion()
+        //{
+          //  lvNbRegionBySecteur.ItemsSource = await App.GstWS.GetRegMinAndMaxVisiteurAsync();
+        //}
 
     }
 }
